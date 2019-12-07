@@ -1,0 +1,60 @@
+Index: src/Kalkulator.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Kalkulator.java	(revision 03265fac33b0ade35857ec318d0aceccba6f2f83)
++++ src/Kalkulator.java	(date 1575730374598)
+@@ -1,3 +1,6 @@
++import javax.crypto.spec.PSource;
++import java.util.Scanner;
++
+ public class Kalkulator {
+     public static int  dodaj(int ... paramtry) {
+         int wynik = 0;
+@@ -6,6 +9,30 @@
+ 
+         }
+         return wynik;
++
+     }
+ 
++    public static void main(String[] args) {
++        System.out.println("początek zakresu");
++        Scanner skaner = new Scanner(System.in);
++
++        double poczatekZakresu =  skaner.nextDouble();
++
++        System.out.println("koniec zakresu");
++        double koniecZakresu =  skaner.nextDouble();
++
++        if (poczatekZakresu<koniecZakresu)
++        {
++            System.out.println("dzielnik: ");
++            double dzielnik = skaner.nextDouble();
++
++            for (int i = 0 ; i<dzielnik;i++)
++            {
++                if(i % dzielnik == 0 && i % dzielnik == 0)
++                {
++                    System.out.println(i);
++                }
++            }
++        }
++    }
+ }
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1575727012828)
++++ .idea/vcs.xml	(date 1575727012828)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
