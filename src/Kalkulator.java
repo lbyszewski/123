@@ -38,6 +38,14 @@ public class Kalkulator {
             {
                 System.out.println("1234567");
             }
+
+            for (int z = -1 ; z>=1000 ; z++)
+            {
+                for (int y = -1 ; z<=-1000;z--)
+                {
+
+                }
+            }
         }
     }
 }
