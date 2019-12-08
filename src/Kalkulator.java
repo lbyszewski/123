@@ -33,6 +33,11 @@ public class Kalkulator {
                     System.out.println(i);
                 }
             }
+
+            for (int a = 0 ; a<1000 ; a++)
+            {
+                System.out.println("1234567");
+            }
         }
     }
 }
